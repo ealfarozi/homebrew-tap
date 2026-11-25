@@ -5,13 +5,13 @@
 class Ptb < Formula
   desc "PaperToBillion CLI — data saham BEI dari PTB di terminal"
   homepage "https://papertobillion.com/help?feature=ai-mcp"
-  version "0.1.2"
+  version "0.1.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.2/ptb_0.1.2_darwin_amd64.tar.gz"
-      sha256 "4d35a1fe98fbf894e318967c2dd34fc25493415eb05ee4fe2a0f6984bf7f4bf5"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.3/ptb_0.1.3_darwin_amd64.tar.gz"
+      sha256 "d4cf1d38625e0d062b36d22a1b295e5d71f04ef94eb5315703ec29eee937542b"
 
       define_method(:install) do
         bin.install "ptb"
@@ -19,8 +19,8 @@ class Ptb < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.2/ptb_0.1.2_darwin_arm64.tar.gz"
-      sha256 "78929dcf3d4132b58360c9804a9cbe6d2751ffba447db3ed21573d76beb78c9d"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.3/ptb_0.1.3_darwin_arm64.tar.gz"
+      sha256 "592fa09f05c5f083a0ee5b6c307cfc0741dcf098a0eb1e7903b829b0802d6d43"
 
       define_method(:install) do
         bin.install "ptb"
@@ -31,16 +31,16 @@ class Ptb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.2/ptb_0.1.2_linux_amd64.tar.gz"
-      sha256 "5802138bfb0a7a007d4e3b8c2b9f0853751cf92a769f93fb34f43ac21ab9d230"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.3/ptb_0.1.3_linux_amd64.tar.gz"
+      sha256 "7847c0b0def14b0cb8477ed8bfb5b111890f83b7c7a49f52ddb81759a5995a4c"
       define_method(:install) do
         bin.install "ptb"
         generate_completions_from_executable(bin/"ptb", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.2/ptb_0.1.2_linux_arm64.tar.gz"
-      sha256 "7db44318c758b8f0a30856cf506b4d4dfaac6e5798dddd7d1276829049204bf2"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.3/ptb_0.1.3_linux_arm64.tar.gz"
+      sha256 "b7f27ea43c6a74f76adaa2f999047ed18df417d12554b14b77206477c9c6e8b9"
       define_method(:install) do
         bin.install "ptb"
         generate_completions_from_executable(bin/"ptb", "completion")
