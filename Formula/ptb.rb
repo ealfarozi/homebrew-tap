@@ -4,26 +4,26 @@
 class Ptb < Formula
   desc "PaperToBillion CLI — data saham BEI dari PTB di terminal"
   homepage "https://papertobillion.com/help?feature=ai-mcp"
-  version "0.1.0"
+  version "0.1.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.0/ptb_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8b016587ea74df74f087b2d1292f1ce64fe0a4cf51bb88a7c45ad51339c2402f"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.1/ptb_0.1.1_darwin_arm64.tar.gz"
+      sha256 "15cad98091411e45725a0867c80fafc63fbfaffd03e695a5998f75e39725e848"
     else
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.0/ptb_0.1.0_darwin_amd64.tar.gz"
-      sha256 "36f48edf978d1e80a6c691ad590d10ff2eb4b1f12424507669924dd8b97129c2"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.1/ptb_0.1.1_darwin_amd64.tar.gz"
+      sha256 "19cea44e529511f745506f68457d9dda272e89f1e63d73696af95888cc5b41d8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.0/ptb_0.1.0_linux_arm64.tar.gz"
-      sha256 "b5d50f1c394b709a18dc5c0223230c6d65a9203a54ac1adb99652fa925a2b7b0"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.1/ptb_0.1.1_linux_arm64.tar.gz"
+      sha256 "a6c0da13966ef200355c22746d457ad1904640b5eea6b6e1f802b5ebbc1abcd3"
     else
-      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.0/ptb_0.1.0_linux_amd64.tar.gz"
-      sha256 "f3c46a165a7783603ee4c1173b2d1f6da2399c3d24b2104ccdd3811317568d4d"
+      url "https://github.com/ealfarozi/ptb-cli/releases/download/v0.1.1/ptb_0.1.1_linux_amd64.tar.gz"
+      sha256 "2b789ac55af96ee9fe52955fa5540d3a1b9e27df7a85cf5f495c17b4cbf6bf4c"
     end
   end
 
